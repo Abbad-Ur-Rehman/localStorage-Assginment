@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Data</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700;900&family=Lato:wght@100;300&family=Montserrat:ital,wght@0,500;0,600;0,900;1,700&family=Pacifico&family=Poppins:ital,wght@0,300;0,500;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="page-one">
+      <div class="container">
+        <div class="buttons">
+          <button class="main-btn" id="user-data">User Data</button>
+          <button class="main-btn" id="add-user">Add User</button>
+          <button class="main-btn" id="delete-data">Delete User</button>
+          <button class="main-btn" id="login-user">Login</button>
+          <button class="main-btn" id="logout-user">Logout</button>
+        </div>
+        <!--  ADD USER FORM -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
+        <div class="add-user-form" id="add-user-form">
+          <i class="fa-solid fa-x" id="close-btn2"></i>
+          <div class="add-user-inputs">
+            <h1>Enter Your Details</h1>
+            <input
+              type="email"
+              id="add-user-name-input"
+              placeholder="Enter Your Name"
+            />
+            <input
+              type="text"
+              id="add-user-fatherName-input"
+              placeholder="Enter Your Father Name"
+            />
+            <input
+              type="email"
+              id="add-user-email-input"
+              placeholder="Enter Your Email"
+            />
+            <input
+              type="password"
+              id="add-user-password-input"
+              placeholder="Enter Your password"
+            />
+          </div>
+          <div class="add-user-btn">
+            <button class="submit-btn" id="submit-btn" type="submit">
+              Submit
+            </button>
+            <div class="store-or-not" id="store-or-not"></div>
+          </div>
+        </div>
+        <!-- LOGIN PAGE =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+        <div class="login-page" id="login-page">
+            <i class="fa-solid fa-x" id="close-btn"></i>
+          <h1>Login</h1>
+          <div class="login-inputs">
+            <input
+              type="email"
+              id="login-email-input"
+              placeholder="Enter Your Email"
+            />
+            <input
+              type="password"
+              id="login-password-input"
+              placeholder="Enter Your Password"
+            />
+          </div>
+          <div class="login-btn">
+            <button id="login-btn">Login</button>
+          </div>
+          <div id="loginornot"></div>
+        </div>
+        <!-- DISPLAY THE USER DATA -->
+        <div class="output" id="output">
+          <i class="fa-solid fa-x" id="close-btn-output"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
